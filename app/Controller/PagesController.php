@@ -94,5 +94,13 @@ class PagesController extends AppController {
         
     }
     
+    
+    public function listar(){
+        
+        $this->loadModel('Agenda');
+        $busca = $this->Agenda->find('all');
+        $this->set(compact('busca'));
+        
+    }
 
 }
