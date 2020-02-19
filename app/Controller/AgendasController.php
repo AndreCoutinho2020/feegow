@@ -35,7 +35,7 @@ class AgendasController extends AppController {
      *
      * @var array
      */
-    public $uses = array();
+    //public $uses = array();
 
     /**
      * Displays a view
