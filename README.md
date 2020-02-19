@@ -1,5 +1,5 @@
 # feegow
-Para o desenvolvimento do teste foi usado framework cakephp, bootstrap e jquery.
+Para o desenvolvimento do teste foi usado framework cakephp, bootstrap, jquery e banco de dados relacional MySql.
 Para rodar a aplicação se faz necessário criar um banco em localhost chamado de "feegow" e uma tabela "agendas", segue abaixo a query usada:
 
 CREATE DATABASE `feegow` /*!40100 DEFAULT CHARACTER SET latin1 */;
@@ -14,7 +14,7 @@ CREATE TABLE `agendas` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-O framework cakephp possui um arquivo de configuração "database.php" para acesso ao banco de dados e este arquivo fica na pasta \app\Config\database.php
+O framework cakephp possui um arquivo de configuração chamado de "database.php" para acesso ao banco de dados e este arquivo fica na pasta \app\Config\database.php
 
 A configuração usada foi: 
 
@@ -30,5 +30,6 @@ public $default = array(
 	);
   
   Logo de faz necessário ajustar os parâmetros host, login, password e database de acordo com o seu banco local.
+  Feito isso, basta acessar aplicação pela url.
   
   Qualquer dúvida estou a disposição!
