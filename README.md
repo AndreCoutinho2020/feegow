@@ -8,6 +8,10 @@ A configuração usada foi:
 
 public $default = array( 'datasource' => 'Database/Mysql', 'persistent' => false, 'host' => 'localhost', 'login' => 'root', 'password' => '', 'database' => 'feegow', 'prefix' => '', //'encoding' => 'utf8', );
 
-Logo de faz necessário ajustar os parâmetros host, login, password e database de acordo com o seu banco local. Feito isso, basta acessar aplicação pela url.
+Logo de faz necessário ajustar os parâmetros host, login, password e database de acordo com o seu banco local. 
+
+Feito isso, basta acessar aplicação pela url.
+
+Para ver os agendamentos gravados no banco, acrescentar "/listar" no fim da url
 
 Qualquer dúvida estou a disposição!
