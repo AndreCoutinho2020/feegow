@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">        
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-        
+
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <link href="/feegow/bootstrap4/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <link href="/feegow/bootstrap4/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -18,9 +18,24 @@
     <body>
         <div class="container">
             <div class="row mt-5 mb-4">
-                <div class="col-md-12 col-lg-12">
-                    <img src="/feegow/img/cropped-favicon-32x32.png"> Feegow                    
-                </div>
+
+                <nav class="navbar navbar navbar-expand-lg fixed-top navbar-light bg-info">
+                    <a class="navbar-brand text-white" href="/feegow">Feegow</a>
+                    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link text-white" href="/feegow">Agendamento <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="/feegow/listar">Listagem de agendamentos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
             <div class="row">
                 <div class="col-md-12 col-lg-12">
