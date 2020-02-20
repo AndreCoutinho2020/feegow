@@ -16,7 +16,7 @@
 
 
     <body>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row mt-5 mb-4">
                 <div class="col-md-12 col-lg-12">
                     <img src="/feegow/img/cropped-favicon-32x32.png"> Feegow                    
