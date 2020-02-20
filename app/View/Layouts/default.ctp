@@ -13,14 +13,14 @@
     <body>
         <div class="container">
             <div class="row mt-5 mb-4">
-                <div class="col-8">
+                <div class="col-12">
                     <div id="header">
                         <img src="/feegow/img/cropped-favicon-32x32.png"> Software para clínicas médicas e consultórios
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-8">
+                <div class="col-12">
                     <?php echo $this->Flash->render(); ?>
                     <?php echo $this->fetch('content'); ?> 
                 </div>
