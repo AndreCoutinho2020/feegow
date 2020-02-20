@@ -30,4 +30,10 @@ App::uses('Helper', 'View');
  * @package       app.View.Helper
  */
 class AppHelper extends Helper {
+    
+    public function datahoraPT($valor = null) {
+        $v = date('d/m/Y H:i:s', strtotime($valor));
+        return $v;
+    }    
+    
 }
