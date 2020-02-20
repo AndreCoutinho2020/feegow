@@ -14,4 +14,6 @@ Feito isso, basta acessar aplicação pela url.
 
 Para ver os agendamentos gravados no banco, acrescentar "/listar" no fim da url
 
+Caso deseje visualizar a aplicação funcionando, basta acessar a url: faacil.com.br/feegow
+
 Qualquer dúvida estou a disposição!
