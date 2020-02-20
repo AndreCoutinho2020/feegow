@@ -16,7 +16,7 @@
         };
         $.ajax(settings).done(function (response) {
             var selectbox = $('#specialty_id');
-            $('<option>').val('').text('Selecione uma opção').appendTo(selectbox);
+            $('<option>').val('').text('Selecione').appendTo(selectbox);
             $.each(response.content, function (index, value) {
                 $('<option>').val(value.especialidade_id).text(value.nome).appendTo(selectbox);
             });
@@ -33,7 +33,7 @@
         };
         $.ajax(settings2).done(function (response) {
             var selectbox2 = $('#source_id');
-            $('<option>').val('').text('Selecione uma opção').appendTo(selectbox2);
+            $('<option>').val('').text('Selecione').appendTo(selectbox2);
             $.each(response.content, function (index, value) {
                 $('<option>').val(value.origem_id).text(value.nome_origem).appendTo(selectbox2);
             });
@@ -58,8 +58,8 @@
                 if (response.content != '') {
                     $('<div class="col-12">').html('<h3>' + esp_txt + ' encontrado</h3>').appendTo('#titulo');
                     $.each(response.content, function (index, value) {
-                        $('<div class="col-1 bg-light pt-3 rounded">').html('<img src="/feegow/img/sem-imagem.png" height="auto" width="40">').appendTo(content_profissionais);
-                        $('<div class="col-3 bg-light pt-3 rounded">').html(value.tratamento + ' ' + value.nome + '<p>' + value.conselho + ' ' + value.documento_conselho + '</p><p><button type="button" class="btn btn-success" onclick="Agendar(' + value.profissional_id + ');" id="' + value.profissional_id + '" nome="' + value.nome + '" >Agendar</button></p>').appendTo(content_profissionais);
+                        $('<div class="col-lg-1 col-sm-4 bg-light pt-3 rounded">').html('<img src="/feegow/img/sem-imagem.png" height="auto" width="40">').appendTo(content_profissionais);
+                        $('<div class="col-lg-3 col-sm-8 bg-light pt-3 rounded">').html(value.tratamento + ' ' + value.nome + '<p>' + value.conselho + ' ' + value.documento_conselho + '</p><p><button type="button" class="btn btn-success" onclick="Agendar(' + value.profissional_id + ');" id="' + value.profissional_id + '" nome="' + value.nome + '" >Agendar</button></p>').appendTo(content_profissionais);
                     });
                 } else {
                     $('<div class="col-12">').html('<h3>Nenhum profissional encontrado!</h3>').appendTo('#titulo');
@@ -114,23 +114,24 @@
 
 <div class="card">
     <div class="card-header">Consulta por especialidades</div>
+
     <div class="card-body">
         <div class="input-group">
             <select name="specialty_id" class="custom-select" id="specialty_id"></select>
             <div class="input-group-append">
-                <button class="btn btn-success" type="button" id="mostrar">Buscar Profissionais</button>
+                <button class="btn btn-success" type="button" id="mostrar">Buscar</button>                
             </div>
-        </div>        
+        </div>
     </div>
 
     <div class="card-body">
         <div class="row mb-4" id="titulo"></div>
-        <div class="row ml-2" id="results"></div>
+        <div class="row ml-1 mr-1" id="results"></div>
     </div>
 
     <div class="card-body" id="formulario" style="display: none;">        
-        <div class="row mb-4 ml-1"><h5>Preencha seus dados para agendar com <span id="selecionado"></span> </h5></div>
-        <div class="row ml-2">
+        <div class="col-sm-12 col-lg-12"><h5>Preencha seus dados para agendar com <span id="selecionado"></span> </h5></div>
+        <div class="col-sm-12 col-lg-10">
 
             <input name="professional_id" id="professional_id" type="hidden">                
             <div class="form-row">
